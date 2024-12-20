@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+  }
+  
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  nav {
+    background-color: orange;
+    margin-bottom: 50px;
+    padding: 1rem;
+  }
+
+  nav h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .heading {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-area {
+    margin-bottom: 30px;
+  }
+  
+  input {
+    width: 500px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    border-color: orange;
+    padding: 5px;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid orange;
+    color: white;
+    font-weight: 900;
+    background-color: orange;
+  }
+
+  .btn:hover {
+    background-color: rgb(170, 109, 19);
+    cursor: pointer;
+  }
+  
+  table {
+    border: 1px solid orange;
+    width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+  }
+  
+  th {
+    font-size: 20px;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  th:nth-child(4) {
+    text-align: center;
+  }
+  
+  tr.border-bottom td {
+    border-bottom: 1pt dashed black;
+  }
+  
+  tbody {
+    padding: 3px;
+    font-size: 15px;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .btn-completed {
+    text-decoration: none;
+    color: green;
+  }
+
+
+  .btn-completed:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 5px;
+  }
+  
+  .btn-remove {
+    text-decoration: none;
+    color: red;
+  }

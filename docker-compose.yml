@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: php-apache-container
+    networks: 
+      - my-network
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - ./php/:/var/www/html/
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8.0
+    restart: always
+    networks:
+      - my-network
+    container_name: mysql-container
+    ports:
+      - "3303:3303"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: init
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+
+networks:
+  my-network:
+volumes:
+  mysql_data:
