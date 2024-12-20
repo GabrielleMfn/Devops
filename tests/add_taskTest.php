@@ -1,5 +1,5 @@
 <?php
-require_once 'connect.php';
+require_once 'connect_test.php';
 
 if (isset($_POST['task'])) {
     if ($_POST['task'] != "") {
