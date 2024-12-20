@@ -1,5 +1,5 @@
 <?php
-require_once 'connect.php';
+require_once 'connect_test.php';
 
 if ($_GET['task_id'] != "") {
     $task_id = $_GET['task_id'];
